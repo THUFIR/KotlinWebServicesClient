@@ -1,5 +1,39 @@
-# gradleScriptKotlin
-gradle script kotlin dsl
+# KotlinWebServicesClient
+
+consume wsdl
+
+https://askubuntu.com/q/1006601/45156
 
 
-the question is how to build a ShadowJar, or UberJar, or FatJar, for this specific project using gradle script Kotlin.  Meaning a gradle.build.kts file versus the existing gradle.build.
+
+
+
+$url = "http://www.webservicex.net/globalweather.asmx?wsdl"
+
+
+$webservicex = New-WebServiceProxy -Uri $url -namespace WebServiceProxy -Class GlobalWeatherSoap
+
+
+$webservicex | gm
+
+
+echo $australiancities
+
+
+$australiancities.NewDataSet
+
+
+$australiancities.NewDataSet.Table
+
+
+
+ $AustralianCities = $webservicex.GetCitiesByCountry("Australia")
+
+echo $AustralianCities
+
+echo "done"
+
+
+
+
+but with kotlin..
