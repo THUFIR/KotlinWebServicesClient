@@ -16,7 +16,7 @@ configurations {
 }
 
 shadowJar {
-    baseName = 'gradleScriptKotlin'
+    baseName = 'KotlinWebServicesClient'
     classifier = null
     version = null
 }
